@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+            <div class="boton-close"><i class="far fa-window-close" onclick="hideMenu()" ></i></div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="visi.html">VISI</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="boton-menu"><i class="fas fa-bars" onclick="showMenu()"></i></div>
+        </nav>
+        <h1>Our Program</h1>
+    </section>
+
+<!--Blog-->
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/hansek.jpg">
+            <h2>Our Program</h2>
+            <p>Salah satu program di SMKN 7 adalah Hansek (Pertahanan Sekolah). Dimana siswa dan siswi dilatih untuk menjadi mandiri dan disiplin.
+                <br>Mereka dibina dan dibimbing langsung oleh para TNI. Di sini siswa diajarkan cara baris-berbaris yang benar, cara menepati dan menghargai waktu.
+                <br>Ketika mereka melakukan suatu kesalahan maka akan diberi hukuman yang sesuai dengan kemampuan siswa.
+                <br>Program hansek ini berlaku sekali setahun untuk semua tingkat kelas dan jurusan SMKN 7 Semarang.
+            </p>
+            
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="text" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div class="blog-right">
+        <h3>Jurusan STEMBA</h3>
+        <div>
+            <span>Teknik Gedung,Sarana dan Perairan</span>
+        </div>
+        <div>
+            <span>Teknik Fabrikasi Logam dan Manufaktur</span>
+        </div>
+        <div>
+            <span>Teknik Sistem Informatika dan Aplikasi</span>
+        </div>
+        <div>
+            <span>Teknik Elektronika dan Komunikasi</span>
+        </div>
+        <div>
+            <span>Teknik Mekatronika</span>
+        </div>
+        <div>
+            <span>Teknik Mesin dan Perawatan Otomotif</span>
+        </div>
+        <div>
+            <span>Teknik Tenaga Listrik</span>
+        </div>
+        <div>
+            <span>Teknik Konstruksi Jalan dan Irigasi Jembatan</span>
+        </div>
+    </div>
+</section>
+
+    
+<!--Footer-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Temporibus, dolor qui nostrum quas corporis autem omnis consequuntur necessitatibus perspiciatis molestiae 
+    incidunt sed facilis,<br> assumenda rem expedita. Impedit non enim tenetur.</p>
+    <div class="icons">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-whatsapp"></i>
+        <i class="fab fa-twitter"></i>
+    </div>
+</section>
+
+    <!---JavaScript---->
+    <script src="https://kit.fontawesome.com/81d2c8a15b.js" crossorigin="anonymous"></script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
